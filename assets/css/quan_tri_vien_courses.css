@@ -1,0 +1,374 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+nav .first-span {
+    margin-left: 10px;
+}
+nav ul {
+    list-style-type: none;
+}
+.flex1 {
+    flex: 1 1;
+}
+nav li {
+    padding: var(--px-10) var(--px-20);
+    margin: var(--px-10);
+    border-radius: 0px;
+}
+nav li:hover {
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.active {
+    background: var(--cl-light-box-shadow);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+nav li a {
+    color: cadetblue;
+}
+.row {
+    display: flex;
+}
+.row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-wrap .left-side {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    :root {
+        --px-20: 15px;
+        --px-10: 7px;
+        --px-80: 60px;
+    }
+    nav {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .introduction {
+        flex-direction: column-reverse;
+    }
+    .introduction .right-side {
+        max-width: 100% !important;
+    }
+    .container-courses .card {
+        width: 100%;
+    }
+
+}
+
+main {
+    padding: var(--px-20);
+    margin-bottom: 80px; /* Giữ khoảng cách với nav */
+    background-color: var(--cl-light-bg);
+}
+.content {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: var(--px-20);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: var(--px-20);
+}
+.introduction {
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: var(--px-20);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* .introduction .left-side {
+    max-width: 50%;
+
+} */
+.introduction .left-side h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--px-80);
+    font-family: "Alegreya", serif;
+    color: cadetblue;
+    letter-spacing: 2px;
+}
+.introduction .right-side {
+    max-width: 40%;
+}
+
+
+
+
+
+
+.introduction p {
+    font-size: 1.2em;
+    color: #6C757D;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--px-20);
+}
+
+.infomations {
+    flex: 1;
+}
+.fast-access h2,
+.infomations h2 {
+    color: cadetblue;
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+
+.infomations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.infomations li {
+    margin: var(--px-10) 0;
+}
+
+
+.fast-access {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--cl-light-4);
+    border-radius: 10px;
+    padding: var(--px-20);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--px-20);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 a {
+    color: #495057;
+    text-decoration: none;
+}
+
+.card p {
+    color: var(--cl-dark-1);
+}
+img {
+    width: 100%;
+}
+.center-x {
+    align-items: center;
+    display: flex;
+}
+.content .infomations {
+    flex: 1 1 200px ;
+}
+/* span {
+    margin-right: 5px;
+} */
+.content .fast-access {
+    flex:  1 1 200px;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-left: 0;
+}
+.introduction ul span {
+    color: green;
+}
+.card .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container-img {
+    max-width: 50%;                                                                                                                                 
+}
+.info-user img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.left-side {
+    flex: 1.7 1 ;
+    width: 60%;
+}
+.right-side {
+    flex: 1 1 ;
+    height: min-content;
+}
+.card {
+    margin: 10px;
+    margin-top: 0;
+}
+.box {
+    background: var(--cl-light-1);
+    border-radius: 10px;
+    padding: var(--px-10);
+    margin: var(--px-10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.box h3 {
+    color: cadetblue;
+}
+.card h4 {
+    color: cadetblue;
+}
+.container-img span {
+    color: green;
+}
+
+
+.scroll {
+    overflow-x: scroll;
+    width: 100%;
+    scrollbar-color: transparent transparent;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.container-courses {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-courses .card {
+    width: 250px;
+}
+.container-courses .container-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container-courses .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    object-fit: cover;
+}
+.container-courses .card {
+    position: relative;
+}
+ .card .price {
+    background-color: rgb(0, 158, 158);
+    color: white !important;
+    border: none;
+    padding: 5px;
+    border-radius: 5px; 
+}
+.container-courses .card .price p {
+}
+.container-courses .card .rating {
+    right: 0;
+}
+.space-between {
+    justify-content: space-between;
+}
+.rating .star {
+    color: gray; 
+}
+
+.rating .star {
+    color: gray; /* Màu mặc định */
+}
+
+.rating .star[data-value="1"],
+.rating .star[data-value="2"],
+.rating .star[data-value="3"],
+.rating .star[data-value="4"],
+.rating .star[data-value="4.5"] {
+    color: gold; /* Màu vàng cho 4,5 sao */
+}
+.card-content h4 {
+    /* margin: 5px 0; */
+    text-align: center;
+}
+.box-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    z-index: 2;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl-light-4);
+}
+.container-search {
+    color: var(--cl-dark-2);
+    flex: 1;
+}
+.container-search input {
+    border: none;
+    font-size: var(--px-16);
+    width: 100%;
+    background: transparent;
+    color: var(--cl-dark-2);
+}
+.container-search input:focus-visible {
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --px-20: 15px;
+        --px-10: 7px;
+        --px-80: 60px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 0;
+    }
+    .container-courses .card {
+        width: 100%;
+    }
+}
+
+p {
+color: var(--cl-dark-1);
+}
